@@ -1,8 +1,8 @@
 # Prime Table Printer
 
-### Funding Circle Coding Challenge 
+## Funding Circle Coding Challenge 
 
-#### Objective 
+### Objective 
 
 Write a program that prints out a multiplication table of the first 10 prime numbers. 
    
@@ -10,7 +10,7 @@ Write a program that prints out a multiplication table of the first 10 prime num
    
    - The first row and column of the table should have the 10 primes, with each cell containing the product of the primes for the corresponding row and column. 
 
-#### Running
+### Running
 
 Make sure you have execute permissions for `print_table_of_primes`:
 
@@ -37,13 +37,13 @@ mkdir -p /usr/local/bin/
 ln -s $PWD/print_table_of_primes /usr/local/bin/
 ```
 
-#### Options
+### Options
 
     -r, --rows=NUM_OF_ROWS           How many rows should prime table contain
     -c, --columns=NUM_OF_COLUMNS     How many columns should prime table contain
     -h, --help                       Prints this help
 
-#### Examples
+### Examples
 
 
 ```Bash
@@ -65,7 +65,7 @@ Output:
 
 Default value for `-rows` and `-columns` is 10.
 
-#### Optimization notes
+### Optimization notes
 
 Library uses simple _trial division test_ to determine prime numbers: 
 To find out whether a given number *n* is a prime number it has to try to divide it by number *m* which goes from 2 to _sqrt(n)_. 
@@ -75,7 +75,7 @@ prime numbers this process has to be done for every number from 2 to *N*, skippi
 
 Since table has rows and columns both consisting of prime numbers we would have to calculate prime numbers twice. That's why prime numbers are cached in memory.
 
-#### Testing
+### Testing
 
 Prime table printer is tested under RSpec:
 
