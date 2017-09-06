@@ -68,7 +68,7 @@ Default value for `-rows` and `-columns` is 10.
 ### Optimization notes
 
 Library uses simple _trial division test_ to determine prime numbers: 
-To find out whether a given number *n* is a prime number it has to try to divide it by number *m* which goes from 2 to _sqrt(n)_. 
+To find out whether a given number *n* is a prime number it has to try to divide it without remainder by number *m* which goes from 2 to _sqrt(n)_. If no such divisor is found, number has to be prime. 
 
 To find first *N*
 prime numbers this process has to be done for every number from 2 to *N*, skipping every even number since even numbers can't be by definition primes. 
