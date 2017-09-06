@@ -1,0 +1,9 @@
+#! /usr/bin/env ruby
+
+require_relative 'lib/option_parser'
+require_relative 'lib/prime_generator'
+require_relative 'lib/prime_table_printer'
+
+options = Parser.parse(ARGV)
+table_printer = PrimeTablePrinter.new(PrimeGenerator.new, options)
+table_printer.print
